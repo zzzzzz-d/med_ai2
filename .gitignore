@@ -1,0 +1,19 @@
+/dataset
+
+# Private or large runtime data
+feedback_data1/
+outputs/checkpoints/*.pth
+*.pth
+
+# Python caches
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+outputs/pycache_check/
+
+# Local development environments and IDE files
+med_ai_pro/
+.idea/
+.vscode/

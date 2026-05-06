@@ -1,0 +1,16 @@
+services:
+  med-ai4:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: med-ai4:latest
+    ports:
+      - "8501:8501"
+    environment:
+      MED_AI_PROJECT_ROOT: /app
+      MED_AI_FEEDBACK_DIR: /data/feedback_data
+      MED_AI_METRIC_STORE_PATH: /data/feedback_data/model_metrics.json
+      MED_AI_DEVICE: auto
+    volumes:
+      - ./feedback_data1:/data/feedback_data
+    restart: unless-stopped

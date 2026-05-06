@@ -1,0 +1,37 @@
+# Build context trimming for deployment image
+dataset/
+med_ai_pro/
+Graduation_Project/
+feedback_data1/
+thesis_figures_base_vs_v8_20260426_notebook_preprocess/
+outputs/*
+!outputs/checkpoints/
+outputs/checkpoints/*
+
+# Local/dev artifacts
+.idea/
+.vscode/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+
+# Training-only code and docs
+scripts/
+*.md
+
+# Experiment outputs
+*.csv
+
+# Unused checkpoints for deployment
+baseline_resnet50_best.pth
+baseline_resnet50_best_acc*.pth
+eca_resnet50_best.pth
+eca_resnet50_epoch3.pth
+eca_resnet50_v*_best_acc*.pth
+
+# Final deployment checkpoint allowlist. Docker uses the last matching rule.
+!outputs/checkpoints/eca_resnet50_v2_finetuned.pth
+!outputs/checkpoints/eca_resnet50_v8_best_acc87_97.pth

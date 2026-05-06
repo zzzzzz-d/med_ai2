@@ -1,0 +1,4 @@
+﻿Model,Arch,Accuracy,Precision,Recall,F1,WeightPath
+baseline,baseline_resnet50,0.5627,0.1823,0.1763,0.1382,E:\AI\med_ai4\baseline_resnet50_best.pth
+baseline+eca,eca_resnet50,0.8293,0.7171,0.6763,0.6723,E:\AI\med_ai4\eca_resnet50_epoch3.pth
+ours,eca_resnet50,0.8797,0.7827,0.8196,0.7991,E:\AI\med_ai4\eca_resnet50_v8_best_acc87_97.pth
